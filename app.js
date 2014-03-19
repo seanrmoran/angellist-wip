@@ -4,11 +4,25 @@
  */
 
 var express = require('express');
-var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var mongoose = require('mongoose');
 
+var uristring =
+process.env.MONGOLAB_URI ||
+process.env.MONGOHQ_URL ||
+'mongodb://localhost/test';
+
+mongoose.connect(uristring, function (err, res) {
+  if (err) {
+  console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+  } else {
+  console.log ('Succeeded connected to: ' + uristring);
+  }
+});
+require('./models/company')(mongoose);
+var routes = require('./routes');
 var app = express();
 
 // all environments
@@ -32,6 +46,8 @@ app.get('/', routes.index);
 app.get('/users', user.list);
 
 app.get('/followers/:id', routes.followers);
+app.get('/populate', routes.populate);
+app.get('/companies', routes.companies);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

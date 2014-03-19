@@ -1,4 +1,6 @@
 var https = require('https');
+var mongoose = require('mongoose');
+var company = mongoose.model('Company');
 
 exports.index = function(req, res){
   res.render('index', { title: 'Express' });
@@ -20,3 +22,43 @@ exports.followers = function(req, res){
 		});
 	});
 };
+
+function queryAPI(num){
+	var data = "";
+	https.get("https://api.angel.co/1/startups/"+num, function(response){
+		response.on('data', function(chunk){
+			data += chunk.toString();
+		});
+		response.on('end', function(){
+			data = JSON.parse(data);
+			if (data.name){
+				var comp = new company({
+					name: data.name,
+					joined: data.created_at
+				});
+				comp.save(function(err, docs){
+					console.log(docs);
+				});
+			}
+		});
+	});
+}
+
+exports.populate = function(req, res){
+	var i = 200;
+	while (i > 0) {
+		queryAPI(i);
+		i--;
+	}
+	res.send('populatin');
+}
+
+exports.companies = function(req, res){
+	var compList = [];
+		company.find({}, function(err, companies){
+			companies.forEach(function(comp){
+				compList.push(comp.name);
+			});
+			res.send(companies);
+		});
+}
