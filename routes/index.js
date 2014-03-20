@@ -47,7 +47,7 @@ function queryAPI(num){
 
 exports.populate = function(req, res){
 	var i = 1500;
-	while (i > 1400) {
+	while (i > 0) {
 		queryAPI(i);
 		i--;
 	}
