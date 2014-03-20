@@ -37,6 +37,7 @@ function queryAPI(num){
 					joined: data.created_at
 				});
 				comp.save(function(err, docs){
+					if(err) console.log(err);
 					console.log(docs);
 				});
 			}
@@ -45,8 +46,8 @@ function queryAPI(num){
 }
 
 exports.populate = function(req, res){
-	var i = 200;
-	while (i > 0) {
+	var i = 1500;
+	while (i > 1400) {
 		queryAPI(i);
 		i--;
 	}
@@ -59,6 +60,6 @@ exports.companies = function(req, res){
 			companies.forEach(function(comp){
 				compList.push(comp.name);
 			});
-			res.send(companies);
+			res.render('companies', { companies: companies });
 		});
 }
