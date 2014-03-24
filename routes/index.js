@@ -46,14 +46,14 @@ function queryAPI(num){
 		});
 	});
 	setTimeout(function(){
-		if (num > 1500){
-			queryAPI(num - 1);
+		if (num < 2500){ //1501
+			queryAPI(num + 1);
 		}
 	}, 2000);
 }
 
 exports.populate = function(req, res){
-	var i = 8898; //1501
+	var i = 1501; //7788
 	queryAPI(i);
 	res.send('populatin');
 }
