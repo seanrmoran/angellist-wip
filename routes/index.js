@@ -25,6 +25,7 @@ exports.followers = function(req, res){
 
 function queryAPI(num){
 	var data = "";
+	console.log('request ' + num);
 	https.get("https://api.angel.co/1/startups/"+num, function(response){
 		response.on('data', function(chunk){
 			data += chunk.toString();
@@ -39,18 +40,21 @@ function queryAPI(num){
 				comp.save(function(err, docs){
 					if(err) console.log(err);
 					console.log(docs);
+					console.log(data.id);
 				});
 			}
 		});
 	});
+	setTimeout(function(){
+		if (num > 1500){
+			queryAPI(num - 1);
+		}
+	}, 2000);
 }
 
 exports.populate = function(req, res){
-	var i = 1500;
-	while (i > 0) {
-		queryAPI(i);
-		i--;
-	}
+	var i = 8898; //1501
+	queryAPI(i);
 	res.send('populatin');
 }
 
