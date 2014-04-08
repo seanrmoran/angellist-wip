@@ -79,7 +79,7 @@ function queryAPI(num){
 					var start = new startup(data[i]);
 					start.save(function(err, docs){
 						if (err) console.log(err);
-						else console.log(docs);
+						else console.log('saved ' + data[i].id);
 					});
 				}
 			}
@@ -87,14 +87,14 @@ function queryAPI(num){
 		});
 	});
 	setTimeout(function(){
-		if (num < 10000 && data.error != "over_limit"){ //stopped 2011 queries at 10682
+		if (num < 400000 && data.error != "over_limit"){ //stopped 2011 queries at 10682
 			queryAPI(num + 51);
 		}
 	}, 2000);
 }
 
 exports.populate = function(req, res){
-	var i = 7926; //1501
+	var i = 151697; //1501
 	queryAPI(i);
 	res.send('populatin');
 }
