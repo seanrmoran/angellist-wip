@@ -32,6 +32,19 @@ exports.findById = function(req, res){
 	})
 }
 
+exports.findAll = function(req, res){
+	var startupIds = [];
+	console.log(hello);
+	startup.find({}, function(err, startups){
+		console.log('hi');
+		if (err) console.log(err);
+		startup.forEach(function(start){
+			startupIds.push(start.id);
+		});
+		res.send(startups);
+	});
+}
+
 function queryAPI(num){
 	var data = "";
 	console.log('request ' + num);
@@ -74,14 +87,14 @@ function queryAPI(num){
 		});
 	});
 	setTimeout(function(){
-		if (num < 1 && data.error != "over_limit"){ //stopped 2011 queries at 10682
+		if (num < 10000 && data.error != "over_limit"){ //stopped 2011 queries at 10682
 			queryAPI(num + 51);
 		}
 	}, 2000);
 }
 
 exports.populate = function(req, res){
-	var i = 1; //1501
+	var i = 51; //1501
 	queryAPI(i);
 	res.send('populatin');
 }
