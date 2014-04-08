@@ -1,7 +1,7 @@
 module.exports = function(mongoose) {
 	var Schema = mongoose.Schema;
 	var startupSchema = new Schema({
-		id: { type: String },
+		id: { type: String, unique: true },
 		hidden: { type: Boolean },
 		community_profile: { type: Boolean },
 		name: { type: String },
@@ -23,14 +23,14 @@ module.exports = function(mongoose) {
       tag_type: { type: String },
       name: { type: String },
       display_name: { type: String },
-      angellist_url: { type: String },
+      angellist_url: { type: String }
 	  }],
 	  locations: [{
 	  	id: { type: String },
       tag_type: { type: String },
       name: { type: String },
       display_name: { type: String },
-      angellist_url: { type: String },
+      angellist_url: { type: String }
 	  }],
 	  status: {
 	  	message: { type: String },
