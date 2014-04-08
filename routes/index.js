@@ -1,6 +1,8 @@
 var https = require('https');
 var mongoose = require('mongoose');
 var company = mongoose.model('Company');
+var startup = mongoose.model('Startup');
+var fs = require('fs');
 
 exports.index = function(req, res){
   res.render('index', { title: 'Express' });
@@ -23,37 +25,63 @@ exports.followers = function(req, res){
 	});
 };
 
+exports.findById = function(req, res){
+	startup.findOne({ id: req.params.id}, function(err, start){
+		if (err) console.log(err);
+		res.send(start);
+	})
+}
+
 function queryAPI(num){
 	var data = "";
 	console.log('request ' + num);
-	https.get("https://api.angel.co/1/startups/"+num, function(response){
+	var url = "https://api.angel.co/1/startups/batch?ids=";
+	for (var i = num; i < num + 50; i++) {
+		if (i == num + 49) {
+			url += i;
+		} else {
+			url += i + ',';
+		}
+	}
+	https.get(url, function(response){
 		response.on('data', function(chunk){
 			data += chunk.toString();
 		});
 		response.on('end', function(){
 			data = JSON.parse(data);
-			if (data.name){
-				var comp = new company({
-					name: data.name,
-					joined: data.created_at
-				});
-				comp.save(function(err, docs){
-					if(err) console.log(err);
-					console.log(docs);
-					console.log(data.id);
-				});
+			// if (data.name){
+			// 	var comp = new company({
+			// 		name: data.name,
+			// 		joined: data.created_at
+			// 	});
+			// 	comp.save(function(err, docs){
+			// 		if(err) console.log(err);
+			// 		console.log(docs);
+			// 		console.log(data.id);
+			// 	});
+			// }
+			//if (data.success != false && data.hidden != true && data.error != "over_limit") {
+			for (var i = 0; i < data.length; i++) {
+				if (data[i].success != false && data[i].hidden != true && data[i].error != "over_limit") {
+					var start = new startup(data[i]);
+					start.save(function(err, docs){
+						if (err) console.log(err);
+						else console.log(docs);
+					});
+				}
 			}
+			//}
 		});
 	});
 	setTimeout(function(){
-		if (num < 2500){ //1501
-			queryAPI(num + 1);
+		if (num < 1 && data.error != "over_limit"){ //stopped 2011 queries at 10682
+			queryAPI(num + 51);
 		}
 	}, 2000);
 }
 
 exports.populate = function(req, res){
-	var i = 1501; //7788
+	var i = 1; //1501
 	queryAPI(i);
 	res.send('populatin');
 }

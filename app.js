@@ -1,7 +1,4 @@
 
-/**
- * Module dependencies.
- */
 
 var express = require('express');
 var user = require('./routes/user');
@@ -22,6 +19,7 @@ mongoose.connect(uristring, function (err, res) {
   }
 });
 require('./models/company')(mongoose);
+require('./models/startup')(mongoose);
 var routes = require('./routes');
 var app = express();
 
@@ -48,6 +46,7 @@ app.get('/users', user.list);
 app.get('/followers/:id', routes.followers);
 app.get('/populate', routes.populate);
 app.get('/companies', routes.companies);
+app.get('/:id', routes.findById);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
