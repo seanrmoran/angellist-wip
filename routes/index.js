@@ -62,39 +62,25 @@ function queryAPI(num){
 		});
 		response.on('end', function(){
 			data = JSON.parse(data);
-			// if (data.name){
-			// 	var comp = new company({
-			// 		name: data.name,
-			// 		joined: data.created_at
-			// 	});
-			// 	comp.save(function(err, docs){
-			// 		if(err) console.log(err);
-			// 		console.log(docs);
-			// 		console.log(data.id);
-			// 	});
-			// }
-			//if (data.success != false && data.hidden != true && data.error != "over_limit") {
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].success != false && data[i].hidden != true && data[i].error != "over_limit") {
 					var start = new startup(data[i]);
 					start.save(function(err, docs){
 						if (err) console.log(err);
-						else console.log('saved ' + data[i].id);
 					});
 				}
 			}
-			//}
 		});
 	});
 	setTimeout(function(){
-		if (num < 400000 && data.error != "over_limit"){ //stopped 2011 queries at 10682
+		if (num < 400000 && data.error != "over_limit"){
 			queryAPI(num + 51);
 		}
 	}, 2000);
 }
 
 exports.populate = function(req, res){
-	var i = 151697; //1501
+	var i = 151697;
 	queryAPI(i);
 	res.send('populatin');
 }
