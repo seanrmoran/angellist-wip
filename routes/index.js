@@ -29,18 +29,12 @@ exports.findById = function(req, res){
 	startup.findOne({ id: req.params.id}, function(err, start){
 		if (err) console.log(err);
 		res.send(start);
-	})
+	});
 }
 
-exports.findAll = function(req, res){
-	var startupIds = [];
-	console.log(hello);
-	startup.find({}, function(err, startups){
-		console.log('hi');
-		if (err) console.log(err);
-		startup.forEach(function(start){
-			startupIds.push(start.id);
-		});
+exports.findByName = function(req, res){
+	var regex = new RegExp(req.params.name, 'i');
+	startup.find({ name: regex }, function(err, startups){
 		res.send(startups);
 	});
 }
