@@ -42,13 +42,14 @@ exports.findByName = function(req, res){
 exports.searching = function(req, res) {
 	if (req.body.name != "") {
 		var nameReg = new RegExp(req.params.name, 'i');
+		startup.find({ name: nameReg }, function(err, startups){
+			res.send(startups);
+		});
 	}
 	if (req.body.location != "") {
 		var locReg = new RegExp(req.params.name, 'i');
 	}
-	startup.find({ name: nameReg }, function(err, startups){
-		res.send(startups);
-	});
+	
 }
 
 function queryAPI(num){
