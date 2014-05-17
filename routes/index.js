@@ -40,7 +40,7 @@ exports.findByName = function(req, res){
 }
 
 exports.searching = function(req, res) {
-	console.log(req.body);
+	res.send(req.body);
 	// if (req.body.name != null) {
 	// 	var nameReg = new RegExp(req.params.name, 'i');
 	// }
