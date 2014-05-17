@@ -1,0 +1,694 @@
+{
+    "success": false,
+    "error": {
+        "type": "bad_parameter_format",
+        "message": "'ids' is invalid. Check the API spec for more details."
+    }
+},
+{
+    "success": false,
+    "error": {
+        "type": "bad_parameter_format",
+        "message": "'ids' is invalid. Check the API spec for more details."
+    }
+},
+[
+    {
+        "id": 1,
+        "hidden": true
+    },
+    {
+        "id": 2,
+        "hidden": true
+    },
+    {
+        "id": 3,
+        "hidden": true
+    },
+    {
+        "id": 4,
+        "hidden": true
+    },
+    {
+        "id": 6,
+        "hidden": true
+    },
+    {
+        "id": 11,
+        "hidden": true
+    },
+    {
+        "id": 12,
+        "hidden": true
+    },
+    {
+        "id": 15,
+        "hidden": true
+    },
+    {
+        "id": 16,
+        "hidden": false,
+        "community_profile": false,
+        "name": "JRapid",
+        "angellist_url": "https://angel.co/jrapid",
+        "logo_url": "https://angel.co/images/shared/nopic_startup.png",
+        "thumb_url": "https://angel.co/images/shared/nopic_startup.png",
+        "quality": 3,
+        "product_desc": "JRapid is a Platform as a Service and is the fastest way to build enterprise Java web applications.\n\nMost enterprise web applications share the same application patterns. JRapid has identified them and created a platform to boost development, using Java and your favorite open source frameworks. \n\nUse it at http://www.jrapid.com",
+        "high_concept": "Rapid development Java cloud platform",
+        "follower_count": 9,
+        "company_url": "http://www.jrapid.com",
+        "created_at": "2010-07-21T18:48:32Z",
+        "updated_at": "2013-08-03T19:59:54Z",
+        "crunchbase_url": null,
+        "twitter_url": "http://www.twitter.com/JRapid",
+        "blog_url": "http://www.jrapid.com/blog",
+        "video_url": "",
+        "markets": [
+            {
+                "id": 12,
+                "tag_type": "MarketTag",
+                "name": "enterprise software",
+                "display_name": "Enterprise Software",
+                "angellist_url": "https://angel.co/enterprise-software"
+            },
+            {
+                "id": 38,
+                "tag_type": "MarketTag",
+                "name": "cloud computing",
+                "display_name": "Cloud Computing",
+                "angellist_url": "https://angel.co/cloud-computing"
+            },
+            {
+                "id": 409,
+                "tag_type": "MarketTag",
+                "name": "development platforms",
+                "display_name": "Development Platforms",
+                "angellist_url": "https://angel.co/development-platforms"
+            },
+            {
+                "id": 1132,
+                "tag_type": "MarketTag",
+                "name": "developer tools",
+                "display_name": "Developer Tools",
+                "angellist_url": "https://angel.co/developer-tools"
+            }
+        ],
+        "locations": [
+            {
+                "id": 1703,
+                "tag_type": "LocationTag",
+                "name": "sunnyvale",
+                "display_name": "Sunnyvale",
+                "angellist_url": "https://angel.co/sunnyvale"
+            },
+            {
+                "id": 1624,
+                "tag_type": "LocationTag",
+                "name": "california",
+                "display_name": "California",
+                "angellist_url": "https://angel.co/california"
+            }
+        ],
+        "company_type": [],
+        "status": null,
+        "screenshots": []
+    },
+    {
+        "id": 17,
+        "hidden": true
+    },
+    {
+        "id": 18,
+        "hidden": true
+    },
+    {
+        "id": 19,
+        "hidden": false,
+        "community_profile": false,
+        "name": "Syntyche, Inc.",
+        "angellist_url": "https://angel.co/syntyche-inc",
+        "logo_url": "https://angel.co/images/shared/nopic_startup.png",
+        "thumb_url": "https://angel.co/images/shared/nopic_startup.png",
+        "quality": 3,
+        "product_desc": "myRepLunch.com\r\n1) increases medical staff efficiency so they can help more patients\r\n2) increases sales rep productivity so they can sell to more customers (physicians)\r\n3) increases restaurants' revenue and exposure\r\nTry it at http://www.myRepLunch.com",
+        "high_concept": " Vendor-client meeting coordinator",
+        "follower_count": 5,
+        "company_url": "http://www.myRepLunch.com",
+        "created_at": "2010-07-22T20:51:57Z",
+        "updated_at": "2013-06-26T21:43:22Z",
+        "crunchbase_url": null,
+        "twitter_url": "http://twitter.com/myRepLunch",
+        "blog_url": "",
+        "video_url": "",
+        "markets": [],
+        "locations": [
+            {
+                "id": 1694,
+                "tag_type": "LocationTag",
+                "name": "palo alto",
+                "display_name": "Palo Alto",
+                "angellist_url": "https://angel.co/palo-alto"
+            }
+        ],
+        "company_type": [],
+        "status": null,
+        "screenshots": []
+    },
+    {
+        "id": 20,
+        "hidden": false,
+        "community_profile": false,
+        "name": "CloudSafe",
+        "angellist_url": "https://angel.co/cloudsafe",
+        "logo_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/20-3ffe1893571fc206091208d75da41925-medium_jpg.jpg?buster=1315771033",
+        "thumb_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/20-3ffe1893571fc206091208d75da41925-thumb_jpg.jpg?buster=1315771033",
+        "quality": 6,
+        "product_desc": "The safest way to store and exchange documents:\n\nStrongly encrypted storage for your digital assets, secured by public/private key structure. Manage user access by using unique access options (two-man rules, confirmers, offline access codes).\n\nCustomers: Small to medium enterprises, Individuals & Freelancers\n\nPlatform is live at https://secure.cloudsafe.com/",
+        "high_concept": "Encrypted Cloud Storage",
+        "follower_count": 49,
+        "company_url": "https://secure.cloudsafe.com",
+        "created_at": "2010-07-22T22:28:29Z",
+        "updated_at": "2013-08-03T19:59:54Z",
+        "crunchbase_url": "http://www.crunchbase.com/company/cloudsafe",
+        "twitter_url": "http://twitter.com/cloudsafe",
+        "blog_url": "http://blog-en.cloudsafe.com",
+        "video_url": "",
+        "markets": [
+            {
+                "id": 10,
+                "tag_type": "MarketTag",
+                "name": "SaaS",
+                "display_name": "SaaS",
+                "angellist_url": "https://angel.co/saas"
+            },
+            {
+                "id": 38,
+                "tag_type": "MarketTag",
+                "name": "cloud computing",
+                "display_name": "Cloud Computing",
+                "angellist_url": "https://angel.co/cloud-computing"
+            },
+            {
+                "id": 62,
+                "tag_type": "MarketTag",
+                "name": "security",
+                "display_name": "Security",
+                "angellist_url": "https://angel.co/security"
+            },
+            {
+                "id": 70,
+                "tag_type": "MarketTag",
+                "name": "storage",
+                "display_name": "Storage",
+                "angellist_url": "https://angel.co/storage"
+            }
+        ],
+        "locations": [
+            {
+                "id": 1915,
+                "tag_type": "LocationTag",
+                "name": "hamburg",
+                "display_name": "Hamburg",
+                "angellist_url": "https://angel.co/hamburg"
+            },
+            {
+                "id": 1716,
+                "tag_type": "LocationTag",
+                "name": "germany",
+                "display_name": "Germany",
+                "angellist_url": "https://angel.co/germany"
+            }
+        ],
+        "company_type": [],
+        "status": {
+            "id": 44533,
+            "message": "CloudSafe is part of the IBM Global Startup Entrepreneur program and will be presenting at the IBM booth on the CeBIT 2012.",
+            "created_at": "2012-02-09T11:17:54Z"
+        },
+        "screenshots": [
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/98/20/1e6682a1e9cb5f9b138c1932d66400ea-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/98/20/1e6682a1e9cb5f9b138c1932d66400ea-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/98/20/bc2aed50610d9b44c8a276ec9ff77c54-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/98/20/bc2aed50610d9b44c8a276ec9ff77c54-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/98/20/2eb01b46d7f784215a79c65fb396bcb7-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/98/20/2eb01b46d7f784215a79c65fb396bcb7-original.png"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "hidden": true
+    },
+    {
+        "id": 22,
+        "hidden": true
+    },
+    {
+        "id": 24,
+        "hidden": true
+    },
+    {
+        "id": 25,
+        "hidden": true
+    },
+    {
+        "id": 26,
+        "hidden": true
+    },
+    {
+        "id": 27,
+        "hidden": true
+    },
+    {
+        "id": 28,
+        "hidden": true
+    },
+    {
+        "id": 29,
+        "hidden": true
+    },
+    {
+        "id": 30,
+        "hidden": true
+    },
+    {
+        "id": 31,
+        "hidden": true
+    },
+    {
+        "id": 34,
+        "hidden": true
+    },
+    {
+        "id": 35,
+        "hidden": false,
+        "community_profile": false,
+        "name": "Vufind",
+        "angellist_url": "https://angel.co/vufind-1",
+        "logo_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/35-15b030cb353b58b3196c8811c2c41381-medium_jpg.jpg?buster=1315771032",
+        "thumb_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/35-15b030cb353b58b3196c8811c2c41381-thumb_jpg.jpg?buster=1315771032",
+        "quality": 6,
+        "product_desc": "Vufind is a personalization and predictive intelligence platform based on the richest Interest Graph.\n\nBuilding on the fact that the majority of online social activity is now image-based, Vufind's solution focuses on patented visual analysis of photos/videos -- in addition to likes/+1s, status updates, e-commerce behavior, check-ins, and app usage patterns -- to compute an accurate dynamic interest profile for any user.\n\n\nSee goo.gl/Ji50T \n\n\n\n",
+        "high_concept": "visual and social intelligence for mobile commerce",
+        "follower_count": 81,
+        "company_url": "http://developers.vufind.com",
+        "created_at": "2010-07-24T14:23:57Z",
+        "updated_at": "2014-03-19T18:47:04Z",
+        "crunchbase_url": "http://www.crunchbase.com/company/vufind",
+        "twitter_url": "http://twitter.com/moatazr",
+        "blog_url": "https://developers.vufind.com/wordpress/",
+        "video_url": "",
+        "markets": [
+            {
+                "id": 29,
+                "tag_type": "MarketTag",
+                "name": "e-commerce",
+                "display_name": "E-Commerce",
+                "angellist_url": "https://angel.co/e-commerce"
+            },
+            {
+                "id": 491,
+                "tag_type": "MarketTag",
+                "name": "image recognition",
+                "display_name": "Image Recognition",
+                "angellist_url": "https://angel.co/image-recognition"
+            },
+            {
+                "id": 1913,
+                "tag_type": "MarketTag",
+                "name": "interest graph",
+                "display_name": "Interest Graph",
+                "angellist_url": "https://angel.co/interest-graph"
+            },
+            {
+                "id": 11774,
+                "tag_type": "MarketTag",
+                "name": "personalization",
+                "display_name": "Personalization",
+                "angellist_url": "https://angel.co/personalization"
+            }
+        ],
+        "locations": [
+            {
+                "id": 1692,
+                "tag_type": "LocationTag",
+                "name": "san francisco",
+                "display_name": "San Francisco",
+                "angellist_url": "https://angel.co/san-francisco"
+            }
+        ],
+        "company_type": [
+            {
+                "id": 94212,
+                "tag_type": "CompanyTypeTag",
+                "name": "startup",
+                "display_name": "Startup",
+                "angellist_url": "https://angel.co/startup"
+            }
+        ],
+        "status": {
+            "id": 121113,
+            "message": "Excited to launch real-time recognition API  for developers on Mashape! Democratizing VisualCommerce. http://bit.ly/vuMashape",
+            "created_at": "2014-01-15T02:24:25Z"
+        },
+        "screenshots": [
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/034c1fbc25ff007b2999b671457d05f2-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/034c1fbc25ff007b2999b671457d05f2-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/71483a47c3446fb6fdf84bc8ec9e9acc-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/71483a47c3446fb6fdf84bc8ec9e9acc-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/3e7cb971ddaaaae3df0b503dd842a2cd-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/3e7cb971ddaaaae3df0b503dd842a2cd-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/0513c3c32722356fb13129632128415d-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/0513c3c32722356fb13129632128415d-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/a17df50025dfb4daaf9cf2be666217c6-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/a17df50025dfb4daaf9cf2be666217c6-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/7a3858f658cd96b858de39d188c50e96-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/7a3858f658cd96b858de39d188c50e96-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/01f970b7172f87fc8ffbd4e0f2717ed0-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/1c/35/01f970b7172f87fc8ffbd4e0f2717ed0-original.png"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "hidden": true
+    },
+    {
+        "id": 37,
+        "hidden": true
+    },
+    {
+        "id": 38,
+        "hidden": false,
+        "community_profile": false,
+        "name": "Qubulus",
+        "angellist_url": "https://angel.co/qubulus",
+        "logo_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/38-cf997fe67a9be315e5d3c3602e8cfe85-medium_jpg.jpg?buster=1315771031",
+        "thumb_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/38-cf997fe67a9be315e5d3c3602e8cfe85-thumb_jpg.jpg?buster=1315771031",
+        "quality": 5,
+        "product_desc": "Qubulus provides a positioning platform for smartphones where GPS doesn't work. Its patented solution is world leading in accuracy, cost-efficiency and versatility. Application areas include navigation, location-based gaming, point-of-sale applications, augmented reality and enterprise solutions and will change the way mobiles interact with their environment. Location data is stored on the backend to create analytics for the physical space.",
+        "high_concept": "Indoor GPS",
+        "follower_count": 72,
+        "company_url": "http://www.qubulus.com",
+        "created_at": "2010-07-24T15:01:12Z",
+        "updated_at": "2013-09-15T15:40:48Z",
+        "crunchbase_url": "http://www.crunchbase.com/company/qubulus",
+        "twitter_url": "http://twitter.com/qubulus",
+        "blog_url": "http://www.qubulus.com/feed/",
+        "video_url": "http://youtu.be/2ylTV7ooON8",
+        "markets": [
+            {
+                "id": 52,
+                "tag_type": "MarketTag",
+                "name": "analytics",
+                "display_name": "Analytics",
+                "angellist_url": "https://angel.co/analytics"
+            },
+            {
+                "id": 57,
+                "tag_type": "MarketTag",
+                "name": "location based services",
+                "display_name": "Location Based Services",
+                "angellist_url": "https://angel.co/location-based-services"
+            },
+            {
+                "id": 595,
+                "tag_type": "MarketTag",
+                "name": "maps",
+                "display_name": "Maps",
+                "angellist_url": "https://angel.co/maps"
+            },
+            {
+                "id": 1132,
+                "tag_type": "MarketTag",
+                "name": "developer tools",
+                "display_name": "Developer Tools",
+                "angellist_url": "https://angel.co/developer-tools"
+            }
+        ],
+        "locations": [
+            {
+                "id": 2311,
+                "tag_type": "LocationTag",
+                "name": "malmo",
+                "display_name": "Malmo",
+                "angellist_url": "https://angel.co/malmo"
+            }
+        ],
+        "company_type": [],
+        "status": {
+            "id": 53294,
+            "message": "Qubulus featured on Forbes: http://onforb.es/HV86QT",
+            "created_at": "2012-04-10T09:53:22Z"
+        },
+        "screenshots": [
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/168e1b7a40ce4b28903217ae4431a912-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/168e1b7a40ce4b28903217ae4431a912-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/4d4c0c85fc55e320dd861decb9b45c64-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/4d4c0c85fc55e320dd861decb9b45c64-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/7637f3d8579c207eb7cade9ca840f61b-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/7637f3d8579c207eb7cade9ca840f61b-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/a76c1e42fe9340637cd7a4923a0930d5-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/a76c1e42fe9340637cd7a4923a0930d5-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/33a47f143cd069ccf37a2a391ef7525b-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/33a47f143cd069ccf37a2a391ef7525b-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/3a8599916d256b1c648d37ef6bfa96a7-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/a5/38/3a8599916d256b1c648d37ef6bfa96a7-original.png"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "hidden": true
+    },
+    {
+        "id": 40,
+        "hidden": true
+    },
+    {
+        "id": 41,
+        "hidden": true
+    },
+    {
+        "id": 42,
+        "hidden": true
+    },
+    {
+        "id": 43,
+        "hidden": false,
+        "community_profile": false,
+        "name": "Lutebox",
+        "angellist_url": "https://angel.co/lutebox",
+        "logo_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/43-38205568969ae080894fa54078de2b0a-medium_jpg.jpg?buster=1392896720",
+        "thumb_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/43-38205568969ae080894fa54078de2b0a-thumb_jpg.jpg?buster=1392896720",
+        "quality": 5,
+        "product_desc": "Lutebox is a London based venture backed tech startup, winners of the Startup Games, Seedcamp finalists, and Lisbon Challenge finalists. Lutebox makes award winning messaging applications and cutting edge communication technology - our flagship app was voted one of London’s Top Ten Most Loved Apps by TNW.\n\nOur apps let people voice chat over photos, and be more expressive and visual with their chats by putting a face to every message. We also have two apps under development, and have developed patented technology for enterprise offerings in the Social TV and Social Shopping spaces.\n\nOur latest app Click is a super fast and fun picture messenger that lets you text with selfies and put a face to every message, making your chats more expressive, visual and fun.",
+        "high_concept": "Emotion in motion",
+        "follower_count": 88,
+        "company_url": "http://lutebox.com",
+        "created_at": "2010-07-25T16:02:53Z",
+        "updated_at": "2014-03-31T15:55:15Z",
+        "crunchbase_url": "http://www.crunchbase.com/company/lutebox",
+        "twitter_url": "http://twitter.com/lutebox",
+        "blog_url": "http://lutebox.tumblr.com",
+        "video_url": "",
+        "markets": [
+            {
+                "id": 157,
+                "tag_type": "MarketTag",
+                "name": "messaging",
+                "display_name": "Messaging",
+                "angellist_url": "https://angel.co/messaging"
+            },
+            {
+                "id": 372,
+                "tag_type": "MarketTag",
+                "name": "photo sharing",
+                "display_name": "Photo Sharing",
+                "angellist_url": "https://angel.co/photo-sharing"
+            },
+            {
+                "id": 760,
+                "tag_type": "MarketTag",
+                "name": "chat",
+                "display_name": "Chat",
+                "angellist_url": "https://angel.co/chat"
+            },
+            {
+                "id": 894,
+                "tag_type": "MarketTag",
+                "name": "video chat",
+                "display_name": "Video Chat",
+                "angellist_url": "https://angel.co/video-chat"
+            }
+        ],
+        "locations": [
+            {
+                "id": 1695,
+                "tag_type": "LocationTag",
+                "name": "london",
+                "display_name": "London",
+                "angellist_url": "https://angel.co/london"
+            }
+        ],
+        "company_type": [],
+        "status": {
+            "id": 108250,
+            "message": "Lutebox voted one of London's Top Ten Most Loved Apps!",
+            "created_at": "2013-09-05T20:31:50Z"
+        },
+        "screenshots": [
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/17/43/c0b3d98abe185dcadd7641639cd35943-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/17/43/c0b3d98abe185dcadd7641639cd35943-original.png"
+            },
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/17/43/933ca5ab7309b2976c872d440b4fe7be-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/17/43/933ca5ab7309b2976c872d440b4fe7be-original.png"
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "hidden": false,
+        "community_profile": false,
+        "name": "Baydin",
+        "angellist_url": "https://angel.co/baydin",
+        "logo_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/44-1212600112b0c2d6e356c805b73f6e04-medium_jpg.jpg?buster=1315771029",
+        "thumb_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/44-1212600112b0c2d6e356c805b73f6e04-thumb_jpg.jpg?buster=1315771029",
+        "quality": 8,
+        "product_desc": "Baydin makes Boomerang, a plugin for Gmail, Outlook, and YMail that lets you schedule sending emails, track responses, and remove incoming messages from your inbox, having them return when you need them. Available now at: http://boomeranggmail.com \n\nWe also make Boomerang Calendar, a smart calendar assistant integrated into Gmail - http://www.boomerangcalendar.com",
+        "high_concept": "Email management that actually works.",
+        "follower_count": 218,
+        "company_url": "http://www.baydin.com",
+        "created_at": "2010-07-25T23:45:08Z",
+        "updated_at": "2013-06-26T21:43:22Z",
+        "crunchbase_url": "http://www.crunchbase.com/company/baydin",
+        "twitter_url": "http://www.twitter.com/baydin",
+        "blog_url": "http://www.baydin.com/blog",
+        "video_url": "http://www.youtube.com/watch?v=4KmsqYjB9j4",
+        "markets": [
+            {
+                "id": 376,
+                "tag_type": "MarketTag",
+                "name": "productivity software",
+                "display_name": "Productivity Software",
+                "angellist_url": "https://angel.co/productivity-software"
+            },
+            {
+                "id": 632,
+                "tag_type": "MarketTag",
+                "name": "email",
+                "display_name": "Email",
+                "angellist_url": "https://angel.co/email"
+            }
+        ],
+        "locations": [
+            {
+                "id": 1701,
+                "tag_type": "LocationTag",
+                "name": "mountain view",
+                "display_name": "Mountain View",
+                "angellist_url": "https://angel.co/mountain-view-1"
+            }
+        ],
+        "company_type": [],
+        "status": {
+            "id": 70266,
+            "message": "To celebrate Labor Day, we released INBOX PAUSE (http://inboxpause.com), the best way to take a real break from your email!",
+            "created_at": "2012-09-03T13:37:37Z"
+        },
+        "screenshots": [
+            {
+                "thumb": "https://s3.amazonaws.com/screenshots.angel.co/f7/44/8a0655e3afd4d9ec564163c14fdedcf0-thumb_jpg.jpg",
+                "original": "https://s3.amazonaws.com/screenshots.angel.co/f7/44/8a0655e3afd4d9ec564163c14fdedcf0-original.png"
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "hidden": true
+    },
+    {
+        "id": 46,
+        "hidden": true
+    },
+    {
+        "id": 48,
+        "hidden": true
+    },
+    {
+        "id": 49,
+        "hidden": true
+    },
+    {
+        "id": 50,
+        "hidden": false,
+        "community_profile": false,
+        "name": "DigiContractor Corporation",
+        "angellist_url": "https://angel.co/digicontractor-corporation",
+        "logo_url": "https://angel.co/images/shared/nopic_startup.png",
+        "thumb_url": "https://angel.co/images/shared/nopic_startup.png",
+        "quality": 2,
+        "product_desc": "Patent pending software that allows you to measure anything within a Digital Photo taken with any Digital Camera.  Measure a face, a wound, a bridge, a skyscraper, a military base, a city, a power pole, a kitchen, a roof, a house.....anything and everthing!",
+        "high_concept": "Measure ANYTHING within a Digital Photo taken with ANY Digital Camera!",
+        "follower_count": 8,
+        "company_url": "http://www.uphotomeasure.com",
+        "created_at": "2010-07-26T16:20:22Z",
+        "updated_at": "2013-06-26T21:43:22Z",
+        "crunchbase_url": null,
+        "twitter_url": "",
+        "blog_url": "",
+        "video_url": "http://www.uphotomeasure.com   3 Videos on website.",
+        "markets": [],
+        "locations": [
+            {
+                "id": 1616,
+                "tag_type": "LocationTag",
+                "name": "atlanta",
+                "display_name": "Atlanta",
+                "angellist_url": "https://angel.co/atlanta"
+            },
+            {
+                "id": 1653,
+                "tag_type": "LocationTag",
+                "name": "los angeles",
+                "display_name": "Los Angeles",
+                "angellist_url": "https://angel.co/los-angeles"
+            }
+        ],
+        "company_type": [],
+        "status": null,
+        "screenshots": []
+    }
+],
