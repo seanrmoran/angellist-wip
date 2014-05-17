@@ -5,7 +5,7 @@ var startup = mongoose.model('Startup');
 var fs = require('fs');
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('search');
 };
 
 exports.followers = function(req, res){
@@ -35,6 +35,18 @@ exports.findById = function(req, res){
 exports.findByName = function(req, res){
 	var regex = new RegExp(req.params.name, 'i');
 	startup.find({ name: regex }, function(err, startups){
+		res.send(startups);
+	});
+}
+
+exports.search = function(req, res) {
+	if (req.body.name != null) {
+		var nameReg = new RegExp(req.params.name, 'i');
+	}
+	if (req.body.location != null) {
+		var locReg = new RegExp(req.params.name, 'i');
+	}
+	startup.find({ name: nameReg }, function(err, startups){
 		res.send(startups);
 	});
 }

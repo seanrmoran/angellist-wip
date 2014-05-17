@@ -48,6 +48,7 @@ app.get('/populate', routes.populate);
 app.get('/companies', routes.companies);
 app.get('/:id', routes.findById);
 app.get('/startup/:name', routes.findByName);
+app.post('/search', routes.search);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
