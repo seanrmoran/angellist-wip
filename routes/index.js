@@ -40,16 +40,15 @@ exports.findByName = function(req, res){
 }
 
 exports.searching = function(req, res) {
-	res.send(req.body);
-	// if (req.body.name != null) {
-	// 	var nameReg = new RegExp(req.params.name, 'i');
-	// }
-	// if (req.body.location != null) {
-	// 	var locReg = new RegExp(req.params.name, 'i');
-	// }
-	// startup.find({ name: nameReg }, function(err, startups){
-	// 	res.send(startups);
-	// });
+	if (req.body.name != "") {
+		var nameReg = new RegExp(req.params.name, 'i');
+	}
+	if (req.body.location != "") {
+		var locReg = new RegExp(req.params.name, 'i');
+	}
+	startup.find({ name: nameReg }, function(err, startups){
+		res.send(startups);
+	});
 }
 
 function queryAPI(num){
