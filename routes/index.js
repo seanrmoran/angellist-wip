@@ -46,8 +46,11 @@ exports.searching = function(req, res) {
 			res.send(startups);
 		});
 	}
-	if (req.body.location != "") {
+	else if (req.body.location != "") {
 		var locReg = new RegExp(req.params.name, 'i');
+	}
+	else {
+		res.send(req.body);
 	}
 	
 }
