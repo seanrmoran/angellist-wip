@@ -47,7 +47,12 @@ exports.searching = function(req, res) {
 		});
 	}
 	else if (req.body.location != "") {
-		var locReg = new RegExp(req.body.name, 'i');
+		var locs = req.body.location.split(', ');
+		var locReg = new RegExp(locs.join('|'), 'i');
+
+		startup.find({ 'locations.name': locReg }, function(err, startups){
+			res.send(startups);
+		});
 	}
 	else {
 		res.send(req.body);
