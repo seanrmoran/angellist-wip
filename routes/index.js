@@ -41,8 +41,10 @@ exports.findByName = function(req, res){
 
 exports.searching = function(req, res) {
 	if (req.body.name != "") {
+		console.log("problem in conditional");
 		var nameReg = new RegExp(req.params.name, 'i');
 		startup.find({ name: nameReg }, function(err, startups){
+			console.log('in find');
 			res.send(startups);
 		});
 	}
