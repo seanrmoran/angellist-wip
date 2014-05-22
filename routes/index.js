@@ -50,7 +50,7 @@ exports.searching = function(req, res) {
 		var locs = req.body.location.split(', ');
 		var locReg = new RegExp(locs.join('|'), 'i');
 		startup.find({ 'locations.name': locReg }, function(err, startups){
-			res.render('startups.ejs', { startups: startups });
+			res.render('startups', { startups: startups });
 		});
 	}
 	else {
