@@ -43,7 +43,7 @@ exports.searching = function(req, res) {
 	if (req.body.name != "") {
 		var nameReg = new RegExp(req.body.name, 'i');
 		startup.find({ name: nameReg }, function(err, startups){
-			res.send(startups);
+			res.render('startups.ejs', { startups: startups });
 		});
 	}
 	else if (req.body.location != "") {
