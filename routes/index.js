@@ -8,6 +8,7 @@ exports.index = function(req, res){
   res.render('search');
 };
 
+// Begin API call
 exports.followers = function(req, res){
 	var data = "";
 	var followers = [];
